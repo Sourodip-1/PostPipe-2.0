@@ -1,3 +1,43 @@
+# Postpipe 2.0 Backend Lab
+
+![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+## Architecture
+
+```mermaid
+graph TD
+    User[Developer / User]
+
+    subgraph "Postpipe Lab"
+        Static[Static Server (Express)]
+        Dynamic[Dynamic Lab (Next.js)]
+        Connectors[Database Connectors]
+    end
+
+    subgraph "Databases"
+        Mongo[(MongoDB)]
+        Postgres[(PostgreSQL)]
+        MySQL[(MySQL)]
+        Scylla[(ScyllaDB)]
+        Dynamo[(DynamoDB)]
+    end
+
+    User -->|POST /submit/:id| Static
+    User -->|Interact UI| Dynamic
+
+    Static --> Connectors
+    Dynamic --> Connectors
+
+    Connectors --> Mongo
+    Connectors --> Postgres
+    Connectors --> MySQL
+    Connectors --> Scylla
+    Connectors --> Dynamo
+```
+
 # Postpipe 2.0 Backend Lab - Workflow
 
 This lab allows you to test Postpipe components and database connectors in isolation.

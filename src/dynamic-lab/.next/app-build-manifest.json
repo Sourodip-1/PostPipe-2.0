@@ -1,19 +1,19 @@
 {
   "pages": {
-    "/auth-demo/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/auth-demo/page.js"
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/layout.js"
     ],
-    "/_not-found/page": [
+    "/auth-demo/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/auth-demo/page.js"
     ]
   }
 }

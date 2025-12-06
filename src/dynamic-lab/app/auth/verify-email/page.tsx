@@ -1,4 +1,4 @@
-import { verifyEmail } from '../../../../../templates/auth/actions';
+import { verifyEmail } from '../../../../../templates/auth/mongodb/actions';
 
 export default async function VerifyEmailPage({
     searchParams,

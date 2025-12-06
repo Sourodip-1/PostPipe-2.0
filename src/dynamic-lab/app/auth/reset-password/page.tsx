@@ -1,7 +1,7 @@
 'use client';
 
 import { useFormState } from 'react-dom';
-import { resetPassword } from '../../../../../templates/auth/actions';
+import { resetPassword } from '../../../../../templates/auth/mongodb/actions';
 import { useSearchParams } from 'next/navigation';
 
 const initialState = {

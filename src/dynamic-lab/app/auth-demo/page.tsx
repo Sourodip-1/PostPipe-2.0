@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useFormState } from 'react-dom';
-import { signup, login, logout, forgotPassword, resendVerification, getSession } from '../../../../templates/auth/actions';
+import { signup, login, logout, forgotPassword, resendVerification, getSession } from '../../../../templates/auth/mongodb/actions';
 
 const initialState = {
     message: '',
